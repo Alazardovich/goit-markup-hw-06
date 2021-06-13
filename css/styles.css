@@ -146,7 +146,7 @@ img {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -177,6 +177,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  z-index: 9999;
 }
 .is-hidden {
   opacity: 0;
@@ -188,11 +189,14 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
+  height: auto;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  color: #212121;
+  text-align: left;
+  padding-left: 40px;
 }
 .modal-button {
   position: absolute;
@@ -212,6 +216,76 @@ img {
   height: 11px;
 }
 
+/* skills to form */
+
+.form-modal {
+  margin: 0;
+}
+
+.text-name {
+  font-family: var(--primery-text);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  text-align: left;
+  /* margin-top: 12px; */
+}
+.form-title {
+  font-family: var(--primery-text);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  padding-top: 40px;
+  margin: 0;
+
+  color: #212121;
+}
+#name,
+#tel,
+#email {
+  width: 448px;
+  height: 40px;
+}
+#comment {
+  width: 440px;
+  height: 120px;
+}
+.text-agreement {
+  font-family: var(--primery-text);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  display: inline-flex;
+  margin-top: 25px;
+  margin-left: 12px;
+}
+.text-agreement-blue {
+  color: #2196f3;
+}
+.submit-form {
+  margin-right: 8px;
+}
+.form-modal .form-button {
+  font-family: var(--primery-text);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  margin: 30px 124px 40px 124px;
+  padding: 10px 55px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: #ffffff;
+  width: 200px;
+  height: 60px;
+}
+
 .hero-title {
   font-family: var(--primery-text);
   font-weight: 900;
@@ -220,7 +294,6 @@ img {
   text-align: center;
   align-self: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   margin: 0 0 30px 0;
 }
 
@@ -356,7 +429,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .features-list p {
@@ -369,12 +442,14 @@ img {
 .works {
   margin-top: 0;
   display: flex;
+  z-index: 2;
   /* flex-wrap: nowrap; */
   /* align-self: center; */
 }
 .block-works {
   margin-left: 30px;
   position: relative;
+  z-index: 1;
 }
 .block-works p {
   font-family: Roboto;
