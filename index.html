@@ -60,19 +60,30 @@
                 </use></svg></button>
                 <form class="form-modal">
                 <p class="form-title">Оставьте свои данные, мы вам перезвоним.</p>
-                <label for="name" class="text-name">Имя</label><br>
-                <input type="text" name="name" id="name"/>
-                <label for="tel" class="text-name">Телефон</label>
-                <input type="tel" name="tel" id="tel"/>
-                <label for="email" class="text-name">Почта</label>
-                <input type="email" name="email" id="email"/>
+                <div class="form-conteiner">
+                  <label for="name" class="text-name">Имя</label>
+                    <input class="form-modal-input" type="text" name="name" id="name" /><svg class="icon-form-name">
+                      <use href="./images/icon/icons.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+                </div>
+                <div class="form-conteiner">
+                  <label for="tel" class="text-name">Телефон</label>
+                <input class="form-modal-input" type="tel" name="tel" id="tel" />
+              </div>
+                <div class="form-conteiner">
+                  <label for="email" class="text-name">Почта</label>
+                    <input class="form-modal-input" type="email" name="email" id="email" />
+                </div>
+                <div class="form-conteiner">
                 <label for="comment" class="text-name">Комментарий</label>
-                <input type="text" name="comment" id="comment"/>
-                
-                <label for="agreement" class="text-agreement"><input  class="submit-form" type="checkbox" name="agreement" />
-                  Соглашаюсь с рассылкой и принимаю <span class="text-agreement-blue"><u> Условия договора</u></span>
-                   
+                <textarea name="comment" id="comment" placeholder="Введите текст"/></textarea>
+                </div>
+                <div class="license-option">
+                <label for="agreement" class="text-agreement"><input  class="license-form" type="checkbox" name="agreement" />
+                  Соглашаюсь с рассылкой и принимаю. <span class="text-agreement-blue"><u>Условия договора</u></span>
                 </label>
+                </div>
+
                 <button type="submit" class="form-button">Отправить</button>
          
                 </form>
@@ -337,6 +348,11 @@
                 </svg></a></li>
           </ul>
         </div>
+        <form class="subscribe-form">
+          <p class="subscribe-text">Подпишитесь на рассылку</p>
+          <input class="subscribe-input"type="text" name="subscribe" placeholder="E-mail"/>
+          <button class="subscribe-button" type="submit">Подписаться<svg class="subscribe-icon"><use href="./images/icon/icons.svg#subscribe"></use></svg></button>
+        </form>
         </div>
       </div>
     </footer>
