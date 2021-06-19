@@ -338,8 +338,10 @@ textarea:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .text-agreement-blue {
   padding: 0;
@@ -354,8 +356,8 @@ textarea {
 
 .license-form:checked + .icon-input {
   border-color: transparent;
-  background-color: var(--blue-clr);
-  background-image: url("../images/icons/icon-check.svg");
+  background-color: var(--accent-color);
+  background-image: url("../images/icons.svg/Vector\(1\)\(1\).svg");
   background-size: contain;
   background-origin: border-box;
 }
@@ -364,7 +366,7 @@ textarea {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
-  background-image: url(../images/icons.svg/Vector\(1\)\(1\).svg);
+  background-image: url("../images/icons.svg/Vector\(1\)\(1\).svg");
   background-color: #afb1b8;
   background-repeat: no-repeat;
 }
@@ -392,6 +394,7 @@ textarea {
   margin-left: 12px;
 } */
 .license-form {
+  display: inline-block;
   position: absolute;
   appearance: none;
 }
