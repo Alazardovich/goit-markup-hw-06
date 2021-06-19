@@ -8,6 +8,7 @@
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     opx 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   --primery-text: "Roboto", sans-serif;
+  --method-transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Изменение стандарта разметки страницы с content- box,
  для стабилизации ширины */
@@ -123,8 +124,10 @@ img {
   bottom: -1px;
   background: #2196f3;
 }
+
 .current {
   position: relative;
+  color: #2196f3;
 }
 
 .auth-nav {
@@ -263,6 +266,7 @@ img {
   width: 18px;
   height: 18px;
   fill: #212121;
+  transition: fill 250ms var(--method-transition);
 }
 .form-modal-input {
   position: relative;
@@ -273,6 +277,8 @@ img {
   border-radius: 4px;
   margin: 0;
   padding: 14px 15px;
+  transition: border 250ms var(--method-transition),
+    fill 250ms var(--method-transition);
 }
 
 .form-modal-input:hover,
@@ -318,6 +324,7 @@ textarea:focus {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  transition: border 250ms var(--method-transition);
 }
 .text-agreement {
   text-align: center;
@@ -341,17 +348,22 @@ textarea {
   border-radius: 4px;
   resize: none;
 }
-
+.license-option::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  background-image: url(../images/icons.svg/Vector\(1\)\(1\).svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.license-option:hover::before {
+  background-color: #2196f3;
+}
 .license-option {
   display: flex;
   align-items: center;
-}
-.license-form[type="checkbox"] {
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-  margin-top: 25px;
-  margin-left: 12px;
 }
 .form-button {
   font-family: var(--primery-text);
