@@ -60,13 +60,13 @@
                 </use></svg></button>
                 <form class="form-modal">
                 <p class="form-title">Оставьте свои данные, мы вам перезвоним.</p>
-                
+                <div class="spacing-form">
                   <label for="name" class="text-name">Имя</label>
                   <span class="form-conteiner">
                     <input class="form-modal-input" type="text" name="name" id="name" /><svg class="icon-form-name">
                       <use href="./images/icon/icons.svg#icon-person-black-18dp-1"></use>
                     </svg></span>
-                  
+                  </div>
                 
                   <label for="tel" class="text-name">Телефон</label>
                   <span class="form-conteiner">
@@ -86,13 +86,14 @@
                
                 <label for="comment" class="text-name">Комментарий</label>
                 <span class="form-conteiner">
-                <textarea name="comment" id="comment" placeholder="Введите текст"/></textarea>
+                <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
                 </span>
-                <div class="license-option">
-                <label for="agreement" class="text-agreement"><input  class="license-form is-hidden" type="checkbox" name="agreement" />
-                  Соглашаюсь с рассылкой и принимаю. <span><u><a class="text-agreement-blue" href="">Условия договора</a></u></span>
+                
+               
+                <label for="agreement" class="text-agreement"><input class="license-form" id="agreement" type="checkbox" name="agreement" required checked />Соглашаюсь с рассылкой и принимаю.<u><a class="text-agreement-blue" href="">Условия договора</a></u>
+                <span class="icon-input"></span>
                 </label>
-                </div>
+                
 
                 <button type="submit" class="form-button">Отправить</button>
          
@@ -360,7 +361,7 @@
         </div>
         <form class="subscribe-form">
           <p class="subscribe-text">Подпишитесь на рассылку</p>
-          <input class="subscribe-input"type="text" name="subscribe" placeholder="E-mail"/>
+          <input class="subscribe-input" type="text" name="subscribe" placeholder="E-mail"/>
           <button class="subscribe-button" type="submit">Подписаться<svg class="subscribe-icon"><use href="./images/icon/icons.svg#subscribe"></use></svg></button>
         </form>
         </div>
