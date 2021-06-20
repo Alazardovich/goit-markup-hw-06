@@ -125,11 +125,7 @@ img {
   background: #2196f3;
 }
 
-.current {
-  position: relative;
-}
 .color-web {
-  color: #2196f3;
 }
 .auth-nav {
   display: flex;
@@ -1027,7 +1023,10 @@ address li {
   /* margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap)); */
 }
-
+.current {
+  position: relative;
+  color: #2196f3;
+}
 .project-works .block-projects {
   flex-basis: calc(100% / 3 -20px);
   margin-left: var(--card-set-gap);
