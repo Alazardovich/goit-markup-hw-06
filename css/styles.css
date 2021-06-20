@@ -212,6 +212,7 @@ img {
   margin: 8px;
   cursor: pointer;
   fill: black;
+  border-color: transparent;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -426,6 +427,7 @@ textarea {
   width: 200px;
   height: 60px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .hero-title {
